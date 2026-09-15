@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beat Racer</title>
-    <script type="module" crossorigin src="./assets/index--N7S1Xz4.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D9787MeG.css">
+    <title>Beat 4 Speed</title>
+    <script type="module" crossorigin src="./assets/index-Ccb-1utb.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-A0xX5kt5.css">
   </head>
   <body>
     <div id="app"></div>
+    <div id="cine-fade"></div>
     <pre id="hud" hidden></pre>
 
     <div id="start-screen" class="overlay start-screen">
       <div class="start-grid">
         <section class="start-main">
-          <h1 class="logo" aria-label="Beat Racer">
+          <h1 class="logo" aria-label="Beat 4 Speed">
             <svg class="logo-svg" viewBox="0 0 640 320" role="img" aria-hidden="true">
               <defs>
                 <linearGradient id="logo-beat" x1="0" y1="0" x2="1" y2="1">
@@ -25,6 +26,10 @@
                 <linearGradient id="logo-racer" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0" stop-color="#ffffff" />
                   <stop offset="1" stop-color="#e2d2ff" />
+                </linearGradient>
+                <linearGradient id="logo-four" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#b8fbff" />
+                  <stop offset="1" stop-color="#3fd0ff" />
                 </linearGradient>
                 <linearGradient id="logo-tri" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0" stop-color="#3ff0ff" />
@@ -57,7 +62,7 @@
               </g>
               <g transform="skewX(-16)">
                 <text x="190" y="168" class="logo-beat" fill="url(#logo-beat)" filter="url(#logo-brush)">BEAT</text>
-                <text x="300" y="262" class="logo-racer" fill="url(#logo-racer)" filter="url(#logo-brush)">RACER</text>
+                <text x="258" y="262" class="logo-racer" fill="url(#logo-racer)" filter="url(#logo-brush)"><tspan fill="url(#logo-four)">4</tspan> SPEED</text>
               </g>
             </svg>
           </h1>
@@ -136,11 +141,11 @@
 
       <footer class="start-footer" aria-hidden="true">
         <div class="sf-brand">
-          <svg class="sf-mono" viewBox="0 0 90 64">
-            <text x="6" y="54" transform="skewX(-14)">BR</text>
+          <svg class="sf-mono" viewBox="0 0 130 64">
+            <text x="12" y="54" transform="skewX(-14)">B4S</text>
           </svg>
           <div>
-            <div class="sf-name">BEAT RACER</div>
+            <div class="sf-name">BEAT 4 SPEED</div>
             <div class="sf-lines">COLLECT NOTES.<br />FOLLOW THE BEAT.<br />STAY AHEAD.</div>
           </div>
         </div>
@@ -171,7 +176,7 @@
             <circle cx="168" cy="47" r="11" />
             <path d="M65 50h92M0 58h40M184 56h36" class="sf-streak" />
           </svg>
-          <span>BEAT RACER ///</span>
+          <span>BEAT 4 SPEED ///</span>
         </div>
       </footer>
     </div>

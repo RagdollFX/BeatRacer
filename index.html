@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beat 4 Speed</title>
-    <script type="module" crossorigin src="./assets/index-BusoybXO.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CkWsmWzM.css">
+    <script type="module" crossorigin src="./assets/index-jMB8i235.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CuME1k4-.css">
   </head>
   <body>
     <div id="app"></div>
@@ -78,19 +78,22 @@
               <small>MP3 · WAV · OGG · M4A – die Datei bleibt lokal, nichts wird hochgeladen</small>
             </div>
 
+            <form id="audius-form" class="audius-search" autocomplete="off">
+              <div class="as-row">
+                <input id="audius-query" type="search" placeholder="Oder Song auf Audius suchen …" maxlength="80" />
+                <button type="submit" class="secondary">Suchen</button>
+              </div>
+              <div id="audius-status" class="as-status" hidden></div>
+              <ul id="audius-results" class="as-results"></ul>
+              <small class="as-hint">Kostenlose Musik von <a href="https://audius.co" target="_blank" rel="noopener">Audius</a> – wird geladen und wie eine eigene Datei analysiert</small>
+            </form>
+
             <div id="analysis-progress" class="progress" hidden>
               <div class="progress-bar"><div class="progress-fill"></div></div>
               <div class="progress-label"></div>
             </div>
             <div id="menu-error" class="error" hidden></div>
             <div id="song-info" class="song-info" hidden></div>
-
-            <div id="car-select" class="car-select">
-              <span class="car-select-label">FAHRZEUG</span>
-              <button class="car-prev secondary" aria-label="Vorheriges Fahrzeug">◀</button>
-              <span class="car-name"></span>
-              <button class="car-next secondary" aria-label="Nächstes Fahrzeug">▶</button>
-            </div>
 
             <div id="difficulty" class="difficulty">
               <button data-difficulty="easy">Easy</button>
